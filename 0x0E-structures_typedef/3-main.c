@@ -2,13 +2,13 @@
 #include "dog.h"
 
 /**
- * main - check the code
+ * main - testing
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    dog_t my_dog;
+    dog_type my_dog;
 
     my_dog.name = "Poppy";
     my_dog.age = 3.5;
