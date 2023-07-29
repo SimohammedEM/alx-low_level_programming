@@ -3,7 +3,7 @@
 /**
  * main - imprimer le nom du fichier
  *
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
