@@ -29,4 +29,3 @@ char *_strdog(char *dst, char *srsc);
 int _strlendog(char *h);
 
 #endif
-
