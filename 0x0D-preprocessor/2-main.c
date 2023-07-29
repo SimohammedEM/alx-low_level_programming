@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main imprimer le nom du fichier
- * Return: 0 (Success)
+ * main - imprimer le nom du fichier
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
