@@ -1,5 +1,5 @@
-#ifndef pi_value_determine
-#define pi_value_ to_ determin
+#ifndef pi
+#define pi
 
 #define PI 3.14159265359
 
