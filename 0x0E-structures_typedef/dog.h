@@ -25,8 +25,8 @@ void initial_chien(struct dog *chien, char *name, float age, char *owner);
 void printing_chien(struct dog *chien);
 Type_Dog *Nouveau_chien(char *name, float age, char *owner);
 void un_chien(Type_Dog *chien);
-/**char *_strcpy(char *dest, char *src);
-int _strlen(char *s);*/
+char *_strdog(char *dst, char *srsc);
+int _strlendog(char *s);
 
 #endif
 
