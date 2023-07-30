@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * int_index - the mission is to return index place if comparison = true, and -1 if else
+ * int_index - means return index place if comparison = true, and -1 if else
  * @size:used to define the size of the elements in this array
  * @cmp: it means the pointer to function of one of the 3 in the main
  * @array: it means the array of this operatiopn
