@@ -3,17 +3,17 @@
 #include <stdio.h>
 
 /**
- * print_all - function to print anything
+ * print_all - want to print anything
  * @format: is the list of types of arguments
  */
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *A, *B = "";
+	char *strin, *separ = "";
 
-	va_list lst;
+	va_list list;
 
-	va_start(lst, format);
+	va_start(list, format);
 
 	if (format)
 	{
@@ -22,25 +22,25 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					printf("%s%c", separ, va_arg(lst, int));
+					printf("%s%c", separ, va_arg(list, int));
 					break;
 				case 'i':
-					printf("%s%d", separ, va_arg(lst, int));
+					printf("%s%d", separ, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", separ, va_arg(lst, double));
+					printf("%s%f", separ, va_arg(list, double));
 					break;
 				case 's':
-					str = va_arg(list, char *);
-					if (!str)
-						str = "(nil)";
-					printf("%s%s", sep, str);
+					strin = va_arg(list, char *);
+					if (!strin)
+						strin = "(nil)";
+					printf("%s%s", separ, strin);
 					break;
 				default:
 					i++;
 					continue;
 			}
-			sep = ", ";
+			separ = ", ";
 			i++;
 		}
 	}
