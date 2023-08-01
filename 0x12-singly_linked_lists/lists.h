@@ -3,7 +3,7 @@
 
 /**
  * struct list_s - linke list
- * @strin: string - malloc string
+ * @str: string - malloc string
  * @leng: length of the string
  * @nxto: points to the next node
  *
@@ -12,8 +12,8 @@
 typedef struct list_s
 {
 	char *str;
-	unsigned int len;
-	struct list_s *next;
+	unsigned int leng;
+	struct list_s *nxt;
 } list_t;
 
 size_t print_list(const list_t *h);

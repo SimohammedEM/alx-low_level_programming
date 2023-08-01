@@ -11,30 +11,30 @@
 int main(void)
 {
     list_t *head;
-    list_t *new;
+    list_t *new_node;
     list_t hello = {"World", 5, NULL};
-    size_t n;
+    size_t x;
 
     head = &hello;
-    new = malloc(sizeof(list_t));
-    if (new == NULL)
+    new_node = malloc(sizeof(list_t));
+    if (new_node == NULL)
     {
         printf("Error\n");
         return (1);
     }
-    new->string = strdup("Hello");
-    new->lent = 5;
-    new->nxt = head;
-    head = new;
-    n = print_list(head);
-    printf("-> %lu elements\n", n);
+    new_node->str = strdup("Hello");
+    new_node->leng = 5;
+    new_node->nxt = head;
+    head = new_node;
+    i = print_list(head);
+    printf("-> %lu elements\n", x);
 
     printf("\n");
-    free(new->string);
-    new->string = NULL;
+    free(new_node->str);
+    new_node->str = NULL;
     n = print_list(head);
-    printf("-> %lu elements\n", n);
+    printf("-> %lu elements\n", x);
 
-    free(new);
+    free(new_node);
     return (0);
 }
