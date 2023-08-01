@@ -2,8 +2,8 @@
 #include "lists.h"
 
 /**
- * @h: means the pointer to the list_t list
  * list_len - used to return nbr of elmnts in linked list
+ * @h: means the pointer to the list_t list
  *
  * Return: nbr of elmnts in h
  */
