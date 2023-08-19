@@ -14,21 +14,21 @@ size_t free_listint_safe(listint_t **h)
 
 	if (h == NULL || *h == NULL)
 		return (0);
-	temp = find_listint_loop_fl(*h);
-	for (len = 0; (*h != temp || loop) && *h != NULL; *h = next)
+	temp = find_listint_loop(*h);
+	for (len = 0; (*h != temp || diff) && *h != NULL; *h = nxt)
 	{
 		len++;
-		next = (*h)->nxt;
-		if (*h == temp && loop)
+		nxt = (*h)->next;
+		if (*h == temp && diff)
 		{
-			if (temp == temp->nxt)
+			if (temp == temp->next)
 			{
 				free(*h);
 				break;
 			}
 			len++;
 			nxt = nxt->nxt;
-			free((*h->nxt);
+			free((*h ->nxt));
 			loop = 0;
 		}
 		free(*h);
