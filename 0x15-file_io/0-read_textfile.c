@@ -9,19 +9,20 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int B;
 	ssize_t D;
-	char buf[READ_BUF_SIZE *8 );
+	ssize_t B;
+	char *A;
+	ssize_t C;
 
-	if (!filename || !letters)
-		return (0);
 	B = open(filename, O_RDONLY);
 	if (B == -1)
 		return (0);
+	A = malloc(sizeof(char) * letters);
+	D = read(B, A, letters);
+	C = write(STDOUT_FILENO, A, D);
 
-	D = read(B, &buf[0], letters);
-	D = write(STDOUT_FILENO, &buf[0], D);
-
+	free(A);
 	close(B);
-	return (D);
+	return (C);
 }
+
