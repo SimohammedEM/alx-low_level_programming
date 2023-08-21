@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 
 	buf = create_buffer(argv[2]);
 	A = open(argv[1], O_RDONLY);
-	C = read(A, buffer, 1024);
+	C = read(A, buf, 1024);
 	B = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
